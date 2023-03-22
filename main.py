@@ -41,17 +41,19 @@ random_option = round(random.randint(0,2))
 # print(random_option)
 
 user_input = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. "))
+print(user_input) 
+print(options[user_input])
+
+print("Computer chose: ")    
+print(options[random_option])
 
 if user_input > random_option :
-    print(user_input)
-    
-    print(options[user_input])
-    
-    print("Computer chose: ")
-    
-    print(options[random_option])
-    
+   
     print("You win! ")
+    
+elif user_input < random_option: 
+    
+    print("You lose")
     
 else :
     print("Draw")
